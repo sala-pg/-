@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Happy Birthday!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Patrick Hand', cursive;
+      background: linear-gradient(to right, #ffe0ec, #d0f0ff);
+      overflow: hidden;
+    }
+
+
+    .card {
+      max-width: 600px;
+      margin: 10% auto;
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: slideIn 2s ease-out;
+    }
+
+
+    h1 {
+      font-size: 3em;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+
+    p {
+      font-size: 1.4em;
+      color: #444;
+    }
+
+
+    .balloons {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      animation: floatUp 10s linear infinite;
+    }
+
+
+    .balloons img {
+      width: 80px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-200%); }
+    }
+
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Floating Balloons -->
+  <div class="balloons">
+    <img src="https://i.ibb.co/7WZRcsJ/balloon.png" alt="balloon">
+    <img src="https://i.ibb.co/7WZRcsJ/balloon.png" alt="balloon">
+    <img src="https://i.ibb.co/7WZRcsJ/balloon.png" alt="balloon">
+  </div>
+
+
+  <!-- Greeting Card -->
+  <div class="card">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>Wishing you a day full of smiles, hugs, and cupcakes! 🧁💖<br>You're pawsome! 🐾😺</p>
+  </div>
+
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Your browser does not support audio.
+  </audio>
+
+
+</body>
+</html>
